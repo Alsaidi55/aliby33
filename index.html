@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>منصة الليبي للتوصيات</title>
+  <link rel="stylesheet" href="styles.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+
+  <!-- رأس الصفحة -->
+  <header>
+    <h1>منصة الليبي للتوصيات</h1>
+  </header>
+
+  <!-- شريط الأدوات -->
+  <nav class="toolbar">
+    <button onclick="changeSymbol('NASDAQ:AAPL')">AAPL</button>
+    <button onclick="changeSymbol('BTCUSD')">BTC/USD</button>
+    <button onclick="changeSymbol('EURUSD')">EUR/USD</button>
+  </nav>
+
+  <!-- عرض الرسم البياني -->
+  <div id="tv_chart_container"></div>
+
+  <!-- حالة السوق -->
+  <div id="market-status">
+    <p>حالة السوق: <span id="market-condition">مستقر</span></p>
+  </div>
+
+  <!-- اختيار الإطار الزمني -->
+  <div class="timeframe-selection">
+    <label for="timeframe-select">اختيار الإطار الزمني:</label>
+    <select id="timeframe-select">
+      <option value="1m">دقيقة</option>
+      <option value="5m">5 دقائق</option>
+      <option value="1h">ساعة</option>
+      <option value="1d">يوم</option>
+      <option value="1w">أسبوع</option>
+    </select>
+  </div>
+
+  <!-- زر إعادة التحليل -->
+  <div class="reanalysis-button">
+    <button id="reanalysis-btn">إعادة التحليل</button>
+  </div>
+
+  <!-- عرض التوصيات -->
+  <div id="recommendations">
+    <h2>التوصيات المتاحة:</h2>
+    <ul id="recommendation-list"></ul>
+  </div>
+
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script src="scripts.js"></script> <!-- ربط ملف JavaScript -->
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
